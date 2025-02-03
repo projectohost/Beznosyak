@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeSpaceRent - Оренда креативних студій</title>
+    <link rel="stylesheet" href="./styles.css"> <!-- Підключення CSS -->
+</head>
+<body>
+    <!-- Шапка сайту -->
+    <header>
+        <div class="container">
+            <h1>CreativeSpaceRent</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Головний банер -->
+    <section class="hero">
+        <div class="container">
+            <h2>Знайди ідеальну студію для свого проєкту</h2>
+            <p>Фотостудії, відеопростори, коворкінги та арт-майданчики</p>
+            <form class="search-form" id="search-form">
+                <input type="text" placeholder="Введіть місто або назву студії" id="search-input" />
+                <select id="studio-type">
+                    <option value="all">Тип студії</option>
+                    <option value="photo">Фотостудія</option>
+                    <option value="video">Відеостудія</option>
+                    <option value="coworking">Коворкінг</option>
+                </select>
+                <button type="submit">Пошук</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Карточки студій -->
+    <section class="studios">
+        <div class="container">
+            <h3>наші студії</h3>
+            <div class="studio-list">
+                <!-- Карточка студії 1 -->
+                <div class="studio-card" data-type="photo">
+                    <img src="https://i-alt.wfolio.com/x/D48ScH1DA6jxU_uSH-Or-F_4P2gJvKb4/xW8T24LKWATQ2ho6W11DD0hK4oupSKGY/N-c0du3_N5RXxzX7MvmgKpjIYtuVBC1t/-_iUZEzlDIJEE0h_qooW1Q7NCA25fu-d.jpg" alt="Фотостудія 1"/>
+                    <h4>Light space Studio</h4>
+                    <p>Фотостудія з професійним освітленням у центрі Києва.</p>
+                    <p><strong>Ціна:</strong> 950 грн/год</p>
+                    <button>Детальніше</button>
+                </div>
+
+                <!-- Карточка студії 2 -->
+                <div class="studio-card" data-type="photo">
+                    <img src="https://katerina-strizh.ru/wp-content/uploads/2017/09/Fotostudii-Sank-Peterburga-SPb-min.jpg" alt="Відеостудія 2">
+                    <h4>kingdom Studio</h4>
+                    <p>Прості для зьомок фільмів в лондоні.</p>
+                    <p><strong>Ціна:</strong> 1500 грн/год</p>
+                    <button>Детальніше</button>
+                </div>
+
+                <!-- Карточка студії 3 -->
+                <div class="studio-card" data-type="video">
+                    <img src="https://inlight.com.ua/wp-content/uploads/2024/10/DSC04841-1024x683.jpg"g alt="Коворкінг 3">
+                    <h4>snow Sdudio</h4>
+                    <p>сніжна студія для для красивих реклам
+                         реклам.</p>
+                    <p><strong>Ціна:</strong> 3500 грн/год</p>
+                    <button>Детальніше</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="studio-list">
+                <!-- Карточка студії 1 -->
+                <div class="studio-card"  data-type="video">
+                    <img src="https://renty.ua/imgs/6f523b4706a81a31fafa133c9fcc9db3cb364535fe8eef75487f1965bb258aab_thumb" alt="Фотостудія 1">
+                    <h4>Light Studio</h4>
+                    <p>студія з красивим видом з серидини в н'ю джерсі.</p>
+                    <p><strong>Ціна:</strong> 500 грн/год</p>
+                    <button>Детальніше</button>
+                </div>
+
+                <!-- Карточка студії 2 -->
+                <div class="studio-card" data-type="coworking">
+                    <img src="https://fotobym.com.ua/uploads/images/product/27257/13c1ed11c51795647ec6ef77e5f8ea4a.jpg" alt="Відеостудія 2">
+                    <h4>MotionSpace Studio</h4>
+                    <p>Відеопростір для створення рекламних роликів.</p>
+                    <p><strong>Ціна:</strong> 800 грн/год</p>
+                    <button>Детальніше</button>
+                </div>
+
+                <!-- Карточка студії 3 -->
+                <div class="studio-card" data-type="photo">
+                    <img src="https://artphotolviv.com/wp-content/uploads/2020/12/%D1%84%D0%BE%D1%82%D0%BE%D1%81%D1%82%D1%83%D0%B4%D1%96%D1%8F-%D0%B0%D1%80%D1%82%D1%84%D0%BE%D1%82%D0%BE-%D0%BB%D1%8C%D0%B2%D1%96%D0%B2-%D1%96%D0%BD%D1%82%D0%B5%D1%80%D1%94%D1%80-%D0%B2%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B9-%D0%B7%D0%B0%D0%BB-05-1024.jpg" alt="Коворкінг 3">
+                    <h4>CreativeHub</h4>
+                    <p>Коворкінг для фрілансерів і дизайнерів з швидким Wi-Fi.</p>
+                    <p><strong>Ціна:</strong> 200 грн/год</p>
+                    <button>Детальніше</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Розділ відгуків -->
+    <section class="reviews">
+        <div class="container">
+            <h3>Відгуки користувачів</h3>
+            
+            <!-- Список відгуків -->
+            <div class="review-list" id="review-list">
+                <!-- Відгуки будуть додаватися динамічно -->
+            </div>
+
+            <!-- Форма для додавання відгуку -->
+            <h4>Залиште ваш відгук</h4>
+            <form class="review-form" id="review-form">
+                <label for="user-name">Ваше ім'я:</label>
+                <input type="text" id="user-name" name="user-name" placeholder="Ваше ім'я" required />
+
+                <label for="user-rating">Ваша оцінка:</label>
+                <select id="user-rating" name="user-rating" required>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+
+                <label for="user-comment">Ваш відгук:</label>
+                <textarea id="user-comment" name="user-comment" rows="5" placeholder="Ваш відгук" required></textarea>
+
+                <button type="submit">Надіслати відгук</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CreativeSpaceRent. Всі права захищено.</p>
+            <ul>
+                <li><a href="#">Політика конфіденційності</a></li>
+                <li><a href="#">Умови використання</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script>
+// Функція для запису кукі
+function setCookie(name, value, days) {
+    const d = new Date();
+    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000)); // Скільки днів зберігати кукі
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = name + "=" + JSON.stringify(value) + ";" + expires + ";path=/";
+}
+
+// Функція для отримання кукі
+function getCookie(name) {
+    let nameEQ = name + "=";
+    let ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i].trim();
+        if (c.indexOf(nameEQ) === 0) return JSON.parse(c.substring(nameEQ.length, c.length));
+    }
+    return null;
+}
+
+// Функція для відображення відгуків на сторінці
+function displayReviews() {
+    const reviews = getCookie('reviews');
+    const reviewList = document.getElementById('review-list');
+    reviewList.innerHTML = ''; // Очистити список перед відображенням нових відгуків
+
+    if (reviews && reviews.length > 0) {
+        reviews.forEach(review => {
+            const reviewCard = document.createElement('div');
+            reviewCard.classList.add('review-card');
+            reviewCard.innerHTML = `
+                <div class="review-header">
+                    <h4>${review.name}</h4>
+                    <p><strong>Оцінка:</strong> ${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</p>
+                </div>
+                <p>${review.comment}</p>
+            `;
+            reviewList.appendChild(reviewCard);
+        });
+    }
+}
+
+// Обробник форми
+document.getElementById('review-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById('user-name').value;
+    const rating = parseInt(document.getElementById('user-rating').value);
+    const comment = document.getElementById('user-comment').value;
+
+    // Отримати існуючі відгуки з кукі
+    const existingReviews = getCookie('reviews') || [];
+
+    // Додати новий відгук
+    const newReview = { name, rating, comment };
+    existingReviews.push(newReview);
+
+    // Зберегти відгуки в кукі
+    setCookie('reviews', existingReviews, 7); // Кукі будуть зберігатися 7 днів
+
+    // Оновити список відгуків
+    displayReviews();
+
+    // Очищення форми
+    document.getElementById('review-form').reset();
+});
+
+// Відображення відгуків після завантаження сторінки
+window.onload = function() {
+    displayReviews();
+};
+
+// Get form and filtering elements
+const searchForm = document.getElementById('search-form');
+const searchInput = document.getElementById('search-input');
+const studioTypeSelect = document.getElementById('studio-type');
+const studioList = document.getElementById('studio-list');
+
+// Add event listener for form submission
+searchForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent page reload
+
+    // Get values from the form
+    const searchText = searchInput.value.toLowerCase(); // Search text
+    const selectedType = studioTypeSelect.value.toLowerCase(); // Studio type
+
+    // Get all studio cards
+    const studios = document.querySelectorAll('.studio-card');
+
+    // Loop through each studio and filter it
+    studios.forEach(function(studio) {
+        const studioName = studio.querySelector('h4').textContent.toLowerCase(); // Studio name
+        const studioType = studio.getAttribute('data-type'); // Studio type
+
+        // Check conditions for filtering
+        const matchesSearchText = studioName.includes(searchText);
+        const matchesType = selectedType === 'all' || studioType === selectedType;
+
+        // Show or hide the studio based on filtering results
+        if (matchesSearchText && matchesType) {
+            studio.style.display = 'block'; // Show
+        } else {
+            studio.style.display = 'none'; // Hide
+        }
+    });
+});
+
+</script>
+
+</html>
